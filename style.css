@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+body {
+    font-family: Helvetica, sans-serif;
+}
+.toDoListSection {
+    width: 500px;
+    margin: auto;
+    box-shadow: 1px 1px 5px rgb(0,0,0,0.5);
+    background-color: teal;
+    min-height: 400px;
+    padding-top: 20px;
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+.addListSection {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.addButton, .inputArea {
+    padding: 20px;
+    border: 1px solid #ddd;
+    font-size: 20px;
+}
+.inputArea {
+    width: 80%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.inputArea:hover, .inputArea:focus {
+    background-color: #ddd;
+}
+.addButton {
+    text-align: center;
+    cursor: pointer;
+    background-color: greenyellow;
+    opacity: .8;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    float: right;
+    border: 0;
+}
+.addButton:hover {
+    opacity: 1;
+}
+
+.listsSection {
+    width: 90%;
+    margin: auto;
+}
+.listsSection ul {
+    list-style-type: none;
+    padding: 0;
+}
+.listsSection li {
+    padding: 10px;
+    background-color: #eee;
+    margin: 15px 0;
+    border-radius: 10px;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+.listsSection button {
+    border: 0;
+    background-color: transparent;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+    font-size: 30px;;
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0 50px;
+    font-size: 20px;
+}
+footer a, footer span {
+    color: orangered;
+}
+footer span {
+    font-size: 30px;
+}
