@@ -117,14 +117,14 @@ h1 {
 footer {
     text-align: center;
     margin: 20px 0 50px;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
 }
 footer a, footer span {
     color: orange;
 }
 footer span {
-    font-size: 30px;
+    font-size: 15px;
 }
 
 @media only screen and (max-width: 500px) {
