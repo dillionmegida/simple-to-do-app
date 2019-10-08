@@ -1,12 +1,3 @@
-// For welcoming User
-let welcome = document.getElementById('welcome');
-let usermessage = window.localStorage.getItem('simple-to-do-app-usermessage');
-if(usermessage == null){
-    window.localStorage.setItem('simple-to-do-app-usermessage', welcome.innerHTML);
-    usermessage = window.localStorage.getItem('simple-to-do-app-usermessage');
-}
-welcome.innerHTML = usermessage;
-
 // Userinput variable gets the users input
   var userInput;
   // listname gets the name of the input -- used when deleting
