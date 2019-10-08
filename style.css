@@ -1,5 +1,9 @@
+body {
+    background-color: rgb(8, 90, 35);
+}
 * {
     box-sizing: border-box;
+    outline: 0;
 }
 
 ::-webkit-scrollbar {
@@ -16,45 +20,63 @@
 body {
     font-family: Helvetica, sans-serif;
 }
+h1 {
+    color: white;
+    margin: 15px 0 0;
+    text-align: center;
+    font-size: 25px;
+}
+#welcome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.userNameInput {
+    border: 0;
+    padding: 10px;
+    margin: 10px auto;
+    width: 250px;
+}
 .toDoListSection {
     width: 500px;
     margin: auto;
-    box-shadow: 1px 1px 5px rgb(0,0,0,0.5);
-    background-color: teal;
+    border: 2px solid #eee;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    background-color: white;
     min-height: 400px;
     padding-top: 20px;
-    margin-top: 30px;
+    margin-top: 10px;
     padding-bottom: 40px;
+    border-radius: 5px;
 }
 .addListSection {
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 0 auto;
 }
 .addButton, .inputArea {
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ddd;
-    font-size: 20px;
+    font-size: 18px;
+    border: 1px solid purple;
 }
 .inputArea {
-    width: 80%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    width: 90%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 .inputArea:hover, .inputArea:focus {
-    background-color: #ddd;
+    border: 1px solid purple;
 }
 .addButton {
     text-align: center;
     cursor: pointer;
     background-color: greenyellow;
     opacity: .8;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     float: right;
     border: 0;
+    font-weight: bold;
 }
 .addButton:hover {
     opacity: 1;
@@ -72,12 +94,16 @@ body {
     padding: 10px;
     background-color: #eee;
     margin: 15px 0;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow-y: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 60px;
+    border: 1px solid #ddd;
+}
+.listsSection li:hover {
+    background-color: #ddd;
 }
 .listsSection button {
     border: 0;
@@ -92,10 +118,20 @@ footer {
     text-align: center;
     margin: 20px 0 50px;
     font-size: 20px;
+    color: white;
 }
 footer a, footer span {
-    color: orangered;
+    color: orange;
 }
 footer span {
     font-size: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    .toDoListSection {
+        width: 95%;
+    }
+    .inputArea {
+        width: 87%;
+    }
 }

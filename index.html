@@ -1,15 +1,31 @@
-<div class='toDoListSection'>
-    <div class='addListSection'>
-        <input id='userInput' class='inputArea' type='text' />
-        <button class='addButton' onclick="addList()">Add</button>
-    </div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple To-do Application</title>
+        <link rel='stylesheet' href='./style.css' type='text/css' />
+    </head>
+    <body>
+        <div id='welcome'>
+            <!-- <h1>Welcome <span contenteditable>(Click to edit your name)</span></h1> -->
+        </div>
+        <div class='toDoListSection'>
+            <div class='addListSection'>
+                <input id='userInput' class='inputArea' type='text' />
+                <button class='addButton' onclick="addList()">+</button>
+            </div>
 
-    <div class='listsSection'>
-        <ul id='lists'>
-            
-        </ul>
-    </div>
-</div>
-<footer>
-    To-do-list application made with <span>&heartsuit;</span> by <a href='https://twitter.com/iamdillion' title='Dillion Megida at Twiiter'>Dillion Megida</a>
-</footer>
+            <div class='listsSection'>
+                <ul id='lists'>
+                    
+                </ul>
+            </div>
+        </div>
+        <footer>
+            To-do-list application made with <span>&heartsuit;</span> by <a href='https://twitter.com/iamdillion' title='Dillion Megida at Twiiter'>Dillion Megida</a>
+        </footer>
+
+        <script src='./script.js'></script>
+    </body>
+</html>
