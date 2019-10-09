@@ -95,6 +95,7 @@ h1 {
     width: 90%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    font-size: 14px;
 }
 .inputArea:hover, .inputArea:focus {
     border: 1px solid purple;
