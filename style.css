@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(8, 90, 35);
+    /* background-color: rgb(8, 90, 35); */
+    background-color: #25342b;
 }
 * {
     box-sizing: border-box;
@@ -24,7 +25,8 @@ h1 {
     color: white;
     margin: 15px 0 0;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
+    font-family: 'Annie Use Your Telescope', 'helvetica';
 }
 #welcome {
     width: 100%;
@@ -119,6 +121,7 @@ footer {
     margin: 20px 0 50px;
     font-size: 15px;
     color: white;
+    font-family: 'Annie Use Your Telescope', 'helvetica';
 }
 footer a, footer span {
     color: orange;
