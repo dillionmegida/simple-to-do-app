@@ -86,32 +86,10 @@ userInput.addEventListener('keyup', (e) => {
 // Service Worker
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-   navigator.serviceWorker.register('sw.js').then( () => {
+   navigator.serviceWorker.register('./sw.js').then( () => {
     console.log('Service Worker Registered')
    }).catch(error => {
     console.log(error);
    })
  })
 }
-
-
-
-// if(dataInDb === false) {
-//          request.open('POST', 'header1.php');
-//          request.onreadystatechange = function() {
-//           if(request.readyState == 4 && request.status == 200) {
-//             if(request.responseText !== null) {
-//               maindiv.innerHTML = request.responseText;
-          
-//               // Hide the loading icon when header1 form is loaded
-//               document.querySelector('#loadingicon').style.display = 'none';
-              
-//               /**Listener for saving header1******************/
-//               var saveheader1 = document.getElementById('header1submit');
-//               saveheader1.addEventListener('click',saveHeader1Form,false);
-    
-              
-//             }
-//           }
-//         }
-//       }
