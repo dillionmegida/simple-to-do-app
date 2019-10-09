@@ -1,3 +1,6 @@
+let message = document.querySelector('#message');
+
+
 // Userinput variable gets the users input
   var userInput;
   // listname gets the name of the input -- used when deleting
@@ -29,8 +32,22 @@ listsFromArray(listArray, lists);
 function addList() {
     userInput = document.getElementById('userInput').value;
     if(userInput === '') {
-        alert('Please insert a list before adding');
+        message.innerHTML = 'Please insert a list before adding &#128683';
+        message.style.backgroundColor = 'coral';
+
+        message.style.transform = 'translateY(0)';
+        setTimeout ( () => {
+        message.style.transform = 'translateY(-40px)';
+        }, 2000 );
     } else {
+        message.innerHTML = 'List successfully added &#128527';
+        message.style.backgroundColor = '#35CE30';
+
+        message.style.transform = 'translateY(0)';
+        setTimeout ( () => {
+        message.style.transform = 'translateY(-40px)';
+        }, 2000 );
+
         listArray.push(userInput);
         document.getElementById('lists').innerHTML = '';
         listsFromArray(listArray, lists);
@@ -46,6 +63,15 @@ function deleteList(listID) {
     listArray = listArray.filter(list =>
         list !== listname
     );
+
+    message.innerHTML = 'List successfully deleted &#10060;';
+    message.style.backgroundColor = '#DA3024';
+
+    message.style.transform = 'translateY(0)';
+    setTimeout ( () => {
+    message.style.transform = 'translateY(-40px)';
+    }, 2000 );
+
     listsFromArray(listArray, lists);
 }
 
@@ -67,3 +93,25 @@ if ('serviceWorker' in navigator) {
    })
  })
 }
+
+
+
+// if(dataInDb === false) {
+//          request.open('POST', 'header1.php');
+//          request.onreadystatechange = function() {
+//           if(request.readyState == 4 && request.status == 200) {
+//             if(request.responseText !== null) {
+//               maindiv.innerHTML = request.responseText;
+          
+//               // Hide the loading icon when header1 form is loaded
+//               document.querySelector('#loadingicon').style.display = 'none';
+              
+//               /**Listener for saving header1******************/
+//               var saveheader1 = document.getElementById('header1submit');
+//               saveheader1.addEventListener('click',saveHeader1Form,false);
+    
+              
+//             }
+//           }
+//         }
+//       }
